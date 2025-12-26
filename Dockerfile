@@ -41,6 +41,7 @@ ENV LD_LIBRARY_PATH=$ORACLE_HOME
 ENV C_INCLUDE_PATH=$ORACLE_HOME/sdk/include
 ENV LIBRARY_PATH=$ORACLE_HOME
 ENV PATH=$PATH:$ORACLE_HOME
+ENV PERL5LIB=/apps/ev/lib
 
 RUN echo "/opt/oracle/instantclient_19_19" > /etc/ld.so.conf.d/oracle.conf && \
     ldconfig
@@ -56,7 +57,19 @@ RUN ln -sf $ORACLE_HOME/libclntsh.so.19.1 $ORACLE_HOME/libclntsh.so && \
 RUN ln -sf /usr/lib/aarch64-linux-gnu/libaio.so.1t64 /usr/lib/aarch64-linux-gnu/libaio.so.1
 
 # 3. Install DBD::Oracle with "plain" output to see errors if it fails
-RUN cpanm --verbose --notest DBD::Oracle
+RUN cpanm --verbose --notest DBD::Oracle \
+        JSON::Parse \
+        DateTime \
+        Log::Log4perl \
+        Set::IntSpan \
+        LWP::UserAgent \
+        Data::OpeningHours::Calendar \
+        Date::Calendar \
+        Template \
+        HTML::Packer \
+        JSON
+
+
 
 # 2. Fix Apache Directory Permissions for CGI
 RUN echo '<Directory "/usr/lib/cgi-bin">\n\
