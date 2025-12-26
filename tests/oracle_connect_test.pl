@@ -5,7 +5,7 @@ use DBI;
 
 my $host = "172.16.1.167";
 # my $sid  = "IMSCOND1";
-my $service_name  = "ALDIDEV1.DEV";
+my $service_name  = "*****.DEV";
 my $user = "***";
 my $pass = "****";
 
