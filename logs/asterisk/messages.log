@@ -1,0 +1,73 @@
+[Dec 26 10:48:13] Asterisk 20.6.0~dfsg+~cs6.13.40431414-2build5 built by nobody @ buildd.debian.org on a unknown running Linux on 2024-04-15 00:13:12 UTC
+[Dec 26 10:48:13] NOTICE[1] loader.c: 359 modules will be loaded.
+[Dec 26 10:48:13] NOTICE[1] res_config_ldap.c: No directory user found, anonymous binding as default.
+[Dec 26 10:48:13] ERROR[1] res_config_ldap.c: No directory URL or host found.
+[Dec 26 10:48:13] ERROR[1] res_config_ldap.c: Cannot load LDAP RealTime driver.
+[Dec 26 10:48:13] NOTICE[1] indications.c: Default country for indication tones: us
+[Dec 26 10:48:13] NOTICE[1] indications.c: Setting default indication country to 'us'
+[Dec 26 10:48:13] NOTICE[1] cdr.c: CDR simple logging enabled.
+[Dec 26 10:48:13] WARNING[1] config.c: parse error: No category context for line 310 of /etc/asterisk/geolocation.conf
+[Dec 26 10:48:13] ERROR[1] res_sorcery_config.c: Contents of config file 'geolocation.conf' are invalid and cannot be parsed
+[Dec 26 10:48:13] WARNING[1] config.c: parse error: No category context for line 310 of /etc/asterisk/geolocation.conf
+[Dec 26 10:48:13] ERROR[1] res_sorcery_config.c: Contents of config file 'geolocation.conf' are invalid and cannot be parsed
+[Dec 26 10:48:14] WARNING[1] res_phoneprov.c: Unable to find a valid server address or name.
+[Dec 26 10:48:14] NOTICE[1] res_smdi.c: No SMDI interfaces are available to listen on, not starting SMDI listener.
+[Dec 26 10:48:14] ERROR[1] ari/config.c: No configured users for ARI
+[Dec 26 10:48:14] NOTICE[1] confbridge/conf_config_parser.c: Adding default_menu menu to app_confbridge
+[Dec 26 10:48:14] NOTICE[1] cel_tds.c: cel_tds has no global category, nothing to configure.
+[Dec 26 10:48:14] WARNING[1] cel_tds.c: cel_tds module had config problems; declining load
+[Dec 26 10:48:14] NOTICE[1] cdr_radius.c: Cannot load radiusclient-ng configuration file /etc/radiusclient-ng/radiusclient.conf.
+[Dec 26 10:48:14] NOTICE[1] cel_custom.c: No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.
+[Dec 26 10:48:14] NOTICE[1] cdr_pgsql.c: cdr_pgsql configuration contains no global section, skipping module load.
+[Dec 26 10:48:14] WARNING[1] cel_pgsql.c: CEL pgsql config file missing global section.
+[Dec 26 10:48:14] NOTICE[1] cel_radius.c: Cannot load radiusclient-ng configuration file /etc/radiusclient-ng/radiusclient.conf.
+[Dec 26 10:48:14] ERROR[1] pbx_dundi.c: Unable to load config dundi.conf
+[Dec 26 10:48:14] WARNING[1] res_hep_rtcp.c: res_hep is disabled; declining module load
+[Dec 26 10:48:14] ERROR[1] chan_unistim.c: Unable to load config unistim.conf
+[Dec 26 10:48:14] ERROR[1] app_voicemail_imap.c: Couldn't find mailbox 1234 in context default
+[Dec 26 10:48:14] ERROR[1] app_voicemail_imap.c: Couldn't find mailbox 1234 in context devices@myaliases
+[Dec 26 10:48:14] ERROR[1] app_voicemail_imap.c: Couldn't find mailbox 1234 in context other
+[Dec 26 10:48:14] WARNING[1] pbx_app.c: Already have an application 'VoiceMail'
+[Dec 26 10:48:14] WARNING[1] pbx_app.c: Already have an application 'VoiceMailMain'
+[Dec 26 10:48:14] WARNING[1] pbx_app.c: Already have an application 'VMAuthenticate'
+[Dec 26 10:48:14] WARNING[1] pbx_app.c: Already have an application 'VoiceMailPlayMsg'
+[Dec 26 10:48:14] WARNING[1] pbx_app.c: Already have an application 'VMSayName'
+[Dec 26 10:48:14] ERROR[1] pbx_functions.c: Function VM_INFO already registered.
+[Dec 26 10:48:14] WARNING[1] manager.c: Manager: Action 'VoicemailUsersList' already registered
+[Dec 26 10:48:14] WARNING[1] manager.c: Manager: Action 'VoicemailUserStatus' already registered
+[Dec 26 10:48:14] WARNING[1] manager.c: Manager: Action 'VoicemailRefresh' already registered
+[Dec 26 10:48:14] WARNING[1] manager.c: Manager: Action 'VoicemailBoxSummary' already registered
+[Dec 26 10:48:14] WARNING[1] manager.c: Manager: Action 'VoicemailMove' already registered
+[Dec 26 10:48:14] WARNING[1] manager.c: Manager: Action 'VoicemailRemove' already registered
+[Dec 26 10:48:14] WARNING[1] manager.c: Manager: Action 'VoicemailForward' already registered
+[Dec 26 10:48:14] ERROR[1] app_voicemail_imap.c: Failure registering applications, functions or tests
+[Dec 26 10:48:14] WARNING[1] app_voicemail_odbc.c: Failed to obtain database object for 'asterisk'!
+[Dec 26 10:48:14] WARNING[1] app_voicemail_odbc.c: Failed to obtain database object for 'asterisk'!
+[Dec 26 10:48:14] WARNING[1] app_voicemail_odbc.c: Failed to obtain database object for 'asterisk'!
+[Dec 26 10:48:14] ERROR[1] pbx_functions.c: Function VM_INFO already registered.
+[Dec 26 10:48:14] ERROR[1] app_voicemail_odbc.c: Failure registering applications, functions or tests
+[Dec 26 10:48:14] WARNING[1] res_hep_pjsip.c: res_hep is disabled; declining module load
+[Dec 26 10:48:14] WARNING[1] loader.c: Some non-required modules failed to load.
+[Dec 26 10:48:14] WARNING[1] loader.c: Module 'chan_sip' has been loaded but was deprecated in Asterisk version 17 and will be removed in Asterisk version 21. Its replacement is 'chan_pjsip'.
+[Dec 26 10:48:14] WARNING[1] loader.c: Module 'res_adsi' has been loaded but may be removed in a future release.
+[Dec 26 10:48:14] WARNING[1] loader.c: Module 'app_getcpeid' has been loaded but may be removed in a future release.
+[Dec 26 10:48:14] WARNING[1] loader.c: Module 'app_macro' has been loaded but was deprecated in Asterisk version 16 and will be removed in Asterisk version 21. Its replacement is 'app_stack (GoSub)'.
+[Dec 26 10:48:14] WARNING[1] loader.c: Module 'app_adsiprog' has been loaded but may be removed in a future release.
+[Dec 26 10:48:14] ERROR[1] loader.c: res_pjsip_transport_websocket declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: cdr_sqlite3_custom declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: cel_tds declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: cdr_radius declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: cdr_pgsql declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: cel_sqlite3_custom declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: cel_radius declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: cdr_tds declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: pbx_dundi declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: res_hep_rtcp declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: chan_unistim declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: app_voicemail_imap declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: app_voicemail_odbc declined to load.
+[Dec 26 10:48:14] ERROR[1] loader.c: res_hep_pjsip declined to load.
+[Dec 26 10:48:14] WARNING[10] chan_sip.c: chan_sip has no official maintainer and is deprecated.  Migration to
+[Dec 26 10:48:14] WARNING[10] chan_sip.c: chan_pjsip is recommended.  See guides at the Asterisk Wiki:
+[Dec 26 10:48:14] WARNING[10] chan_sip.c: https://wiki.asterisk.org/wiki/display/AST/Migrating+from+chan_sip+to+res_pjsip
+[Dec 26 10:48:14] WARNING[10] chan_sip.c: https://wiki.asterisk.org/wiki/display/AST/Configuring+res_pjsip

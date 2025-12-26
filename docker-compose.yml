@@ -1,0 +1,21 @@
+services:
+  ivr-server:
+    build: .
+    container_name: asterisk-ivr
+    ports:
+      - "80:80"             # Apache Web
+      - "5060:5060/udp"     # SIP
+      - "5038:5038"         # AMI (Management)
+      - "10000-10050:10000-10050/udp" # RTP Audio
+    volumes:
+      # - ./cgi-bin:/usr/lib/cgi-bin
+      # - ./agi-bin:/var/lib/asterisk/agi-bin
+      # - ./config:/etc/asterisk
+
+      - ./config/extensions.conf:/etc/asterisk/extensions.conf
+      - ./ami/manager.conf:/etc/asterisk/manager.conf
+      - ./agi-bin:/var/lib/asterisk/agi-bin
+      - ./cgi-bin/dashboard.pl:/usr/lib/cgi-bin/dashboard.pl
+      - ./sounds:/var/lib/asterisk/sounds
+      - ./scripts/hello_world.pl:/var/lib/asterisk/agi-bin/hello_world.pl
+    restart: unless-stopped
