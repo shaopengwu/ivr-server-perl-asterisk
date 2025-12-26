@@ -18,5 +18,6 @@ docker run -it --net=host --name my-ivr ivr-asterisk
 
 # Verification
 ``` bash
-
+docker build -t imshaopeng/ivr-server .
+docker push imshaopeng/ivr-server
 ```
