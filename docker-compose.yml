@@ -2,6 +2,13 @@ services:
   ivr-server:
     build: .
     container_name: asterisk-ivr
+    environment:
+      # - ORACLE_HOME=/opt/oracle/instantclient_21_1
+      # - LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1
+      # - TNS_ADMIN=/etc/oracle # Optional: if you use a tnsnames.ora file
+      - ORACLE_HOME=/opt/oracle/instantclient_19_19
+      - LD_LIBRARY_PATH=/opt/oracle/instantclient_19_19
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/oracle/instantclient_19_19
     ports:
       - "80:80"             # Apache Web
       - "5060:5060/udp"     # SIP
@@ -12,6 +19,7 @@ services:
       # - ./agi-bin:/var/lib/asterisk/agi-bin
       # - ./config:/etc/asterisk
 
+      - ./oracle_config:/etc/oracle
       - ./config/extensions.conf:/etc/asterisk/extensions.conf
       - ./ami/manager.conf:/etc/asterisk/manager.conf
       - ./agi-bin:/var/lib/asterisk/agi-bin
