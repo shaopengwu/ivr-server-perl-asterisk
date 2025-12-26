@@ -77,4 +77,10 @@ RUN a2enmod cgi && a2enconf serve-cgi-bin
 EXPOSE 80 5060/udp 5038 10000-10050/udp
 
 # Startup script to fix permissions at runtime and start both services
-CMD sh -c "chmod +x /usr/lib/cgi-bin/*.pl && chmod +x /var/lib/asterisk/agi-bin/*.pl && service apache2 start && asterisk -fvvvg"
+# CMD sh -c "chmod +x /usr/lib/cgi-bin/*.pl && chmod +x /var/lib/asterisk/agi-bin/*.pl && service apache2 start && asterisk -fvvvg"
+# Copy the entrypoint script
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Recommended JSON/Exec form
+ENTRYPOINT ["/entrypoint.sh"]
