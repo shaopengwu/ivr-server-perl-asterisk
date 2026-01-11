@@ -67,7 +67,10 @@ RUN cpanm --verbose --notest DBD::Oracle \
         Date::Calendar \
         Template \
         HTML::Packer \
-        JSON
+        JSON \
+        AnyEvent \
+        EV \
+        Asterisk::AMI
 
 
 
