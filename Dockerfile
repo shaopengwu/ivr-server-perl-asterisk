@@ -70,7 +70,8 @@ RUN cpanm --verbose --notest DBD::Oracle \
         JSON \
         AnyEvent \
         EV \
-        Asterisk::AMI
+        Asterisk::AMI \
+        JSON::WebToken
 
 
 
